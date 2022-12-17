@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  background: #f3f4f6;
+  padding: 6rem;
+  align-items: center;
+}
+nav header {
+  display: flex;
+  align-items: center;
+}
+nav header span {
+  padding-right: 3rem;
+  color: green;
+}/*# sourceMappingURL=navbar.css.map */

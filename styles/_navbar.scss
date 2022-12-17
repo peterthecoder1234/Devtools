@@ -1,0 +1,59 @@
+nav {
+  display: flex;
+  background: $primaryWhite;
+  padding: 1rem;
+  align-items: center;
+
+  header{
+    display: flex;
+    align-items: center;
+
+    .material-symbols-outlined {
+      font-size: 2.5rem;
+    }
+
+    span {
+      padding-right: 2rem;
+      color : $primaryGreen;
+    }
+    
+    a {
+      font-size : 25px;
+      font-weight: bold;
+      color: #1f2937;
+      &:hover{
+        color : $primaryGreen;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    margin-left: auto;
+
+    li {
+      margin-right: 1rem;
+      margin-left: 1rem;
+      
+      #explore-link {
+        color : #1f2937;
+        &:hover {
+          color : $primaryGreen;
+        }
+      }
+
+      #join-link {
+        background-color: $primaryGreen;
+        color : white;
+        padding : 1rem;
+        border-radius: 1rem;
+
+        &:hover {
+          color : $primaryGreen;
+          background-color : white;
+        }
+      }
+    }
+  }
+
+}

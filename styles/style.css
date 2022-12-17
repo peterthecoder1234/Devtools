@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Functions*/
+nav {
+  display: flex;
+  background: #f3f4f6;
+  padding: 1rem;
+  align-items: center;
+}
+nav header {
+  display: flex;
+  align-items: center;
+}
+nav header .material-symbols-outlined {
+  font-size: 2.5rem;
+}
+nav header span {
+  padding-right: 2rem;
+  color: #4ade80;
+}
+nav header a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1f2937;
+}
+nav header a:hover {
+  color: #4ade80;
+}
+nav ul {
+  display: flex;
+  margin-left: auto;
+}
+nav ul li {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+nav ul li #explore-link {
+  color: #1f2937;
+}
+nav ul li #explore-link:hover {
+  color: #4ade80;
+}
+nav ul li #join-link {
+  background-color: #4ade80;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+nav ul li #join-link:hover {
+  color: #4ade80;
+  background-color: white;
+}
+
+.index-main {
+  height: 100vh;
+}
+
+.input-section {
+  height: 66vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://grayscale.com/wp-content/uploads/2019/10/intro-to-bitcoin-cash.jpg");
+}
+.input-section input {
+  width: 33vw;
+  padding: 1rem;
+  border: 1px solid #4ade80;
+  border-radius: 0.7rem;
+  background-color: #f3f4f6;
+  color: #4ade80;
+  text-align: center;
+  font-weight: 600;
+}
+
+.index-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  height: 50vh;
+}
+.index-cards-grid .index-card {
+  background-image: linear-gradient(to top, #4ade80, white);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.index-cards-grid .index-card .index-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+.index-cards-grid .index-card ul {
+  text-align: center;
+}
+.index-cards-grid .index-card ul li {
+  font-size: large;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.index-cards-grid .index-card ul li:hover {
+  background-color: #e2e8f0;
+}
+.index-cards-grid .index-card ul li a {
+  color: #4ade80;
+}
+.index-cards-grid .index-card .index-card-our-mission {
+  color: #4b5563;
+  width: 66%;
+}/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
 nav {
   display: flex;
   background: #f3f4f6;
-  padding: 1rem;
+  padding: 1.2rem;
   align-items: center;
 }
 nav header {
@@ -22,7 +22,7 @@ nav header .material-symbols-outlined {
 }
 nav header span {
   padding-right: 2rem;
-  color: #4ade80;
+  color: #86efac;
 }
 nav header a {
   font-size: 25px;
@@ -30,7 +30,7 @@ nav header a {
   color: #1f2937;
 }
 nav header a:hover {
-  color: #4ade80;
+  color: #86efac;
 }
 nav ul {
   display: flex;
@@ -44,16 +44,16 @@ nav ul li #explore-link {
   color: #1f2937;
 }
 nav ul li #explore-link:hover {
-  color: #4ade80;
+  color: #86efac;
 }
 nav ul li #join-link {
-  background-color: #4ade80;
+  background-color: #86efac;
   color: white;
   padding: 1rem;
   border-radius: 1rem;
 }
 nav ul li #join-link:hover {
-  color: #4ade80;
+  color: #86efac;
   background-color: white;
 }
 
@@ -69,13 +69,20 @@ nav ul li #join-link:hover {
   align-items: center;
   background-image: url("https://grayscale.com/wp-content/uploads/2019/10/intro-to-bitcoin-cash.jpg");
 }
-.input-section input {
+.input-section div {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f3f4f6;
+  box-shadow: 0px 0px 10px #bbf7d0;
+  color: #86efac;
+  border-radius: 0.7rem;
+}
+.input-section div input {
   width: 33vw;
   padding: 1rem;
-  border: 1px solid #4ade80;
-  border-radius: 0.7rem;
+  border: none;
   background-color: #f3f4f6;
-  color: #4ade80;
   text-align: center;
   font-weight: 600;
 }
@@ -86,7 +93,7 @@ nav ul li #join-link:hover {
   height: 50vh;
 }
 .index-cards-grid .index-card {
-  background-image: linear-gradient(to top, #4ade80, white);
+  background-image: linear-gradient(to top, #86efac, white);
   text-align: center;
   height: 100%;
   display: flex;
@@ -100,24 +107,76 @@ nav ul li #join-link:hover {
   color: #4b5563;
   margin-bottom: 2rem;
 }
-.index-cards-grid .index-card ul {
-  text-align: center;
-}
-.index-cards-grid .index-card ul li {
-  font-size: large;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 0.7rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.index-cards-grid .index-card ul li:hover {
-  background-color: #e2e8f0;
-}
-.index-cards-grid .index-card ul li a {
-  color: #4ade80;
-}
-.index-cards-grid .index-card .index-card-our-mission {
+.index-cards-grid .index-card .index-card-text {
   color: #4b5563;
   width: 66%;
+  word-spacing: 2px;
+}
+.index-cards-grid .index-card .material-symbols-outlined {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+@media only screen and (max-width: 1024px) {
+  .index-cards-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .index-cards-grid .index-card {
+    background-image: linear-gradient(to right, white, #bbf7d0, white);
+  }
+  .input-section input {
+    width: 70%;
+  }
+}
+.explore-main {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-image: linear-gradient(to top, #86efac, #f3f4f6);
+}
+.explore-main header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.explore-main header h1 {
+  margin-top: 3rem;
+  color: #86efac;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 1.5rem;
+  grid-auto-rows: 20rem;
+  padding: 1.5rem;
+}
+.explore-grid .explore-grid-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+}
+.explore-grid .explore-grid-card div {
+  margin-top: 0.7rem;
+  height: 60%;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-image: url("https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/992/304488265f95db7dec2c31a144339d98_crop.png");
+}
+.explore-grid .explore-grid-card a {
+  padding: 1rem;
+  background-color: #86efac;
+  border-radius: 1rem;
+  color: white;
+}
+.explore-grid .explore-grid-card p {
+  width: 95%;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

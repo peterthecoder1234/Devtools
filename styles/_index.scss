@@ -1,0 +1,83 @@
+.index-main {
+  height: 100vh;
+}
+
+.input-section {
+  height: 66vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://grayscale.com/wp-content/uploads/2019/10/intro-to-bitcoin-cash.jpg');
+
+
+  div {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: $primaryWhite;
+    box-shadow:0px 0px 10px #bbf7d0;
+    color : $primaryGreen;
+    border-radius: 0.7rem;
+
+    input {
+      width: 33vw;
+      padding: 1rem;
+      border: none;
+      background-color: $primaryWhite;
+      
+      text-align: center;
+      font-weight: 600;
+      
+  
+    }
+  }
+}
+
+.index-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  height: 50vh;
+
+  .index-card {
+    background-image: linear-gradient(to top, $primaryGreen, white);
+    text-align: center;
+    @include centerDiv(column,100%);
+
+    .index-card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color : #4b5563;
+      margin-bottom: 2rem;
+    }
+
+    .index-card-text {
+      color : #4b5563;
+      width: 66%;
+      word-spacing: 2px;
+    }
+
+    .material-symbols-outlined {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color : #4b5563;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .index-cards-grid {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .index-card {
+      background-image: linear-gradient(to right, white,#bbf7d0 , white);
+    }
+  }
+
+  .input-section input {
+    width: 70%;
+  }
+}

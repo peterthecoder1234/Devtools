@@ -15,6 +15,24 @@
   flex-direction: $direction;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 100vw;
+  margin-block : .5em 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #86efac;
+  border : .25em solid #f3f4f6;
+  border-radius: 100vw
+}
+
 @import './varibles';
 @import './navbar';
 @import './index';

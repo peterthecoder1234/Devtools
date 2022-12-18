@@ -29,14 +29,16 @@
     text-align: center;
     background-color: white;
     border-radius: 1rem;
+    padding: 2rem;
 
-    div {
+
+    .explore-grid-image {
+      border-radius: 0.5rem;
       margin-top: 0.7rem;
-      height: 60%;
-      width: 100%;
+      background-size: cover;
+      height: 8rem;
+      width: auto;
       margin-bottom: 1rem;
-      background-image: url('https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/992/304488265f95db7dec2c31a144339d98_crop.png');
-
     }
     
     a {
@@ -44,6 +46,11 @@
       background-color: $primaryGreen;
       border-radius: 1rem;
       color : white;
+
+      &:hover {
+        color : $primaryGreen;
+        background-color: $primaryWhite;
+      }
     }
 
     p {

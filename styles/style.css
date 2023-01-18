@@ -39,7 +39,7 @@ nav header .material-symbols-outlined {
 }
 nav header span {
   padding-right: 2rem;
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
 }
 nav header a {
   font-size: 25px;
@@ -47,7 +47,7 @@ nav header a {
   color: #1f2937;
 }
 nav header a:hover {
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
 }
 nav ul {
   display: flex;
@@ -61,16 +61,16 @@ nav ul li #explore-link {
   color: #1f2937;
 }
 nav ul li #explore-link:hover {
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
 }
 nav ul li #join-link {
-  background-color: #86efac;
+  background-color: hsl(142deg, 100%, 76%);
   color: white;
   padding: 1rem;
   border-radius: 1rem;
 }
 nav ul li #join-link:hover {
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
   background-color: white;
 }
 
@@ -92,7 +92,7 @@ nav ul li #join-link:hover {
   padding: 0.5rem;
   background-color: #f3f4f6;
   box-shadow: 0px 0px 10px #bbf7d0;
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
   border-radius: 0.7rem;
 }
 .input-section div input {
@@ -110,7 +110,7 @@ nav ul li #join-link:hover {
   height: 50vh;
 }
 .index-cards-grid .index-card {
-  background-image: linear-gradient(to top, #86efac, white);
+  background-image: linear-gradient(to top, hsl(142deg, 100%, 76%), white);
   text-align: center;
   height: 100%;
   display: flex;
@@ -152,7 +152,7 @@ nav ul li #join-link:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-image: linear-gradient(to top, #86efac, #f3f4f6);
+  background-image: linear-gradient(to top, hsl(142deg, 100%, 76%), #f3f4f6);
 }
 .explore-main header {
   display: flex;
@@ -162,7 +162,7 @@ nav ul li #join-link:hover {
 }
 .explore-main header h1 {
   margin-top: 3rem;
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
 }
 
 .explore-grid {
@@ -201,15 +201,74 @@ nav ul li #join-link:hover {
 }
 .explore-grid .explore-grid-card a {
   padding: 1rem;
-  background-color: #86efac;
+  background-color: hsl(142deg, 100%, 76%);
   border-radius: 1rem;
   color: white;
 }
 .explore-grid .explore-grid-card a:hover {
-  color: #86efac;
+  color: hsl(142deg, 100%, 76%);
   background-color: #f3f4f6;
 }
 .explore-grid .explore-grid-card p {
   width: 95%;
   margin-bottom: 1rem;
+}
+
+.login-main {
+  height: 100vh;
+  background-image: linear-gradient(to top, hsl(142deg, 100%, 76%), #f3f4f6);
+}
+
+.login-section {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.login {
+  box-shadow: 0px 0px 100px #f3f4f6;
+  border-radius: 1.5rem;
+  width: 50%;
+  height: 50%;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login h1 {
+  margin-bottom: 2rem;
+}
+.login input {
+  margin-block: 0.5rem;
+  width: 17rem;
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: hsl(142deg, 100%, 76%) solid 2px;
+}
+.login div {
+  margin-top: 2rem;
+}
+.login div button {
+  margin-inline: 0.5rem;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  border-radius: 0.5rem;
+  background: hsl(142deg, 100%, 76%);
+  color: white;
+  border: none;
+}
+.login div button:hover {
+  background: white;
+  color: hsl(142deg, 100%, 76%);
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    margin-inline: 2rem;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

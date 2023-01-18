@@ -1,0 +1,61 @@
+.login-main
+{
+  height : 100vh;
+  background-image: linear-gradient(to top, $primaryGreen, $primaryWhite);
+}
+
+.login-section {
+  @include centerDiv(row, 90%);
+}
+
+.login {
+  box-shadow: 0px 0px 100px $primaryWhite;
+  border-radius: 1.5rem;
+  width: 50%;
+  height: 50%;
+  background-color: $primaryWhite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  input {
+    margin-block: 0.5rem;
+    width: 17rem;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border : $primaryGreen solid 2px;
+  }
+
+  div {
+    margin-top : 2rem;
+
+    button {
+      margin-inline : 0.5rem;
+      padding-block: 1rem;
+      padding-inline: 3rem;
+      border-radius: 0.5rem;
+      background: $primaryGreen;
+      color : white;
+      border : none;
+
+      &:hover {
+        background: white;
+        color : $primaryGreen;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    margin-inline: 2rem;
+    width : 100%;
+  }
+}
